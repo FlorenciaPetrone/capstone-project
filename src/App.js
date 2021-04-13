@@ -9,7 +9,7 @@ function App(){
         <div>
             <Header />
             <Switch>
-                <Route exact path="/capstone-project">
+                <Route exact path="/">
                     <Photos />
                 </Route>
                 <Route path="/cart">
