@@ -2,7 +2,8 @@ import React from "react"
 import {Switch, Route} from "react-router-dom"
 import Header from "./components/Header"
 import Cart from "./pages/Cart"
-import Photos from "./pages/Photos"
+import Home from "./pages/Home"
+import Favorite from "./pages/Favorite"
 
 function App(){
     return(
@@ -10,10 +11,13 @@ function App(){
             <Header />
             <Switch>
                 <Route exact path="/">
-                    <Photos />
+                    <Home />
                 </Route>
-                <Route path="/cart">
+                <Route exact path="/cart">
                     <Cart />
+                </Route>
+                <Route path="/favorite">
+                    <Favorite />
                 </Route>
             </Switch>
                 

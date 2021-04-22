@@ -21,7 +21,7 @@ function CartItem({item}) {
                 ref= {ref}
             >
             </i>
-            <img src={item.url} width="130px" />
+            <img src={item.src.tiny} width="130px" alt=""/>
             <p>$5.99</p>
         </div>
     )
