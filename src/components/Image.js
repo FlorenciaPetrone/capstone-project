@@ -2,11 +2,16 @@ import React, {useContext} from "react"
 import {Context} from "../Context"
 import PropTypes from "prop-types"
 import useHover from "../hooks/useHover"
-
+ 
 function Image({className, img}) {
     const [hovered, ref] = useHover()
     
-    const {toggleFavorite, addImage, removeFromCart, cartItems} = useContext(Context)
+    const {
+        toggleFavorite, 
+        addImage, 
+        removeFromCart, 
+        cartItems, 
+    } = useContext(Context)
 
     function heartIcon () {
         if(img.isFavorite){
@@ -30,7 +35,7 @@ function Image({className, img}) {
         className={`${className} image-container`}
         ref={ref}
         >
-            <img src={img.url} alt="" className="image-grid"/>
+            <img src={img.src.tiny} alt="" className="image-grid"/>
             {heartIcon()}
             {cartIcon()}
         </div>

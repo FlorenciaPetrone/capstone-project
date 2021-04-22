@@ -22,7 +22,7 @@ function Cart() {
             setCartItems([])
         }, 3000)
     }
-   
+    
 
     return (
         <main className="cart-page">
@@ -39,5 +39,5 @@ function Cart() {
         </main>
     )
 }
-
+ 
 export default Cart
