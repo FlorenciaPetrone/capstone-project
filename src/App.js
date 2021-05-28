@@ -5,6 +5,7 @@ import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import Favorite from "./pages/Favorite";
 import Footer from "./components/Footer";
+import "./styles.css";
 
 function App() {
   return (
